@@ -23,7 +23,7 @@ app.post('/',async(req,res)=>{
        max_tokens:100,
        temperature:0.5
      })
-     res.status(200).json({data:chatCompletion?.choices[0]?.message})
+     res.status(200).json({data:chatCompletion?.choices[0]?.message}) 
   }catch(error){
     res.status(500).json({err:error?.message})
   }
